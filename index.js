@@ -9,7 +9,7 @@ const isTest = process.env.NODE_ENV === 'test';
 
 const app = express();
 
-const server = app.listen(port, () => console.log(`name ${name}  v${version}. environment ${process.env.NODE_ENV}. port ${port}`));
+const server = app.listen(port, () => console.log(`name ${name}  v${version}. environment ${environment}. port ${port}`));
 
 app.use(express.json());
 if (!isTest) app.use(morgan('tiny'));
